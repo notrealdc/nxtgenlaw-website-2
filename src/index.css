@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Butler';
+  src: url('https://fontlibrary.org/assets/fonts/butler/ca89f1ad2b010d6d7f7430ef1ae41973/1c93a638b28bc696fe31a5e9ca1e18df/ButlerRegular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Butler';
+  src: url('https://fontlibrary.org/assets/fonts/butler/ca89f1ad2b010d6d7f7430ef1ae41973/fbda348653745b3db7e2b87cd1a141fe/ButlerMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Butler';
+  src: url('https://fontlibrary.org/assets/fonts/butler/ca89f1ad2b010d6d7f7430ef1ae41973/bb20bd82505e606d2271e1aa308d62f2/ButlerBold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Butler';
+  src: url('https://fontlibrary.org/assets/fonts/butler/ca89f1ad2b010d6d7f7430ef1ae41973/769a70a64ce261474b03e9f9f19a917c/ButlerExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Butler';
+  src: url('https://fontlibrary.org/assets/fonts/butler/ca89f1ad2b010d6d7f7430ef1ae41973/7797713384091e6cac80daf5b147e10b/ButlerBlack.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Butler';
+  src: url('https://fontlibrary.org/assets/fonts/butler/ca89f1ad2b010d6d7f7430ef1ae41973/89498099657e20181336bb7169bb01b2/ButlerLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Butler';
+  src: url('https://fontlibrary.org/assets/fonts/butler/ca89f1ad2b010d6d7f7430ef1ae41973/47903a19cdb1dc8bea2c17cd70e81121/ButlerUltraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-serif: "Butler", serif;
+  --font-sans: "Butler", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-primary: #3f465f;
+  --color-secondary: #090644;
+  --color-accent-gold: #D4AF37;
+  --color-background-dark: #0a1128;
+
+  --color-blue-50: #f0f1fa;
+  --color-blue-100: #e0e2f5;
+  --color-blue-200: #c2c5eb;
+  --color-blue-300: #9ba1de;
+  --color-blue-400: #6a71cb;
+  --color-blue-500: #4249b3;
+  --color-blue-600: #090644;
+  --color-blue-700: #070536;
+  --color-blue-800: #050429;
+  --color-blue-900: #03021c;
+
+  /* Sharp yet refined beveled border-radius overrides */
+  --radius: 3px;
+  --radius-xs: 1px;
+  --radius-sm: 2px;
+  --radius-md: 2px;
+  --radius-lg: 3px;
+  --radius-xl: 4px;
+  --radius-2xl: 5px;
+  --radius-3xl: 6px;
+  --radius-4xl: 8px;
+}
+
+/* Base custom styling enhancements */
+body {
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Custom visual style utilities for the groundbreaking slash effects */
+.text-glow-blue {
+  text-shadow: 0 0 30px rgba(9, 6, 68, 0.25);
+}
+
+.groundbreaking-text {
+  position: relative;
+  display: inline-block;
+  color: #111827;
+  text-shadow: 
+      -1px -1px 0 rgba(250, 204, 21, 0.35), 
+      1px -1px 0 rgba(250, 204, 21, 0.35), 
+      -1px 1px 0 rgba(250, 204, 21, 0.35), 
+      1px 1px 0 rgba(250, 204, 21, 0.35);
+}
+
+/* Jagged concrete cracking split sections */
+.crack-top-piece {
+  clip-path: polygon(0 0, 100% 0, 100% 41%, 86% 48%, 72% 34%, 56% 51%, 44% 36%, 29% 47%, 16% 32%, 0 43%);
+}
+
+.crack-bottom-piece {
+  clip-path: polygon(0 44%, 16% 33%, 29% 48%, 44% 37%, 56% 52%, 72% 35%, 86% 49%, 100% 42%, 100% 100%, 0 100%);
+}
+
+/* Keyframes for the concrete heavy crash rumble */
+@keyframes heavy-rumble {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  10% { transform: translate(-4px, 5px) rotate(-1.5deg); }
+  20% { transform: translate(5px, -3px) rotate(2deg); }
+  30% { transform: translate(-6px, -2px) rotate(-2.5deg); }
+  40% { transform: translate(3px, 4px) rotate(1.5deg); }
+  50% { transform: translate(-3px, 3px) rotate(-2deg); }
+  60% { transform: translate(5px, -4px) rotate(2.5deg); }
+  70% { transform: translate(-4px, 2px) rotate(-1deg); }
+  80% { transform: translate(3px, -3px) rotate(0.8deg); }
+  90% { transform: translate(-2px, 4px) rotate(-0.5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.animate-heavy-rumble {
+  animation: heavy-rumble 0.65s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+/* Keyframes for flying rock debris explosion with physics deceleration & vertical gravity drop */
+@keyframes explode-rock {
+  0% {
+    transform: translate(0, 0) scale(1.1) rotate(0deg);
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(var(--tx), calc(var(--ty) + 240px)) scale(var(--scale, 0.1)) rotate(var(--rot));
+    opacity: 0;
+  }
+}
+
+.animate-flying-rock {
+  animation: explode-rock var(--dur) cubic-bezier(0.12, 0.82, 0.22, 1) forwards;
+}
+
+.text-glow-gold {
+  text-shadow: 0 0 15px rgba(250, 204, 21, 0.8), 0 0 30px rgba(245, 158, 11, 0.4);
+}
+
+/* Infinite brand ticker marquee animations */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-container:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+.marquee-scroll-container {
+  mask: linear-gradient(
+    90deg,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+}
+

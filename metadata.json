@@ -1,0 +1,6 @@
+{
+  "name": "NXTGen Law Group",
+  "description": "A premier law firm website featuring elite legal representation, attorney directories, civil defense consulting, and case evaluation tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
